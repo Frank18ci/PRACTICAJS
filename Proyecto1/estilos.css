@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(to right,#f8a5a5, #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.fondo-calculadora{
+    margin-top: 5rem;
+    width: 20rem;
+    height: 30rem;
+    background: rgb(29, 29, 29);
+    border-radius: 1rem;
+    box-shadow: rgb(29, 29, 29) 2px 2px 2px 2px;
+}
+.calculadora-header{
+    text-align: end;
+    padding: 1rem;
+}
+.btn-cambio{
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+.calculadora-input{
+    width: 100%;
+    text-align: end;
+}
+#numero{
+    padding: 0.8rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #fff;
+    border: none;
+    text-align: end;
+    background: none;
+    outline: none;
+}
+.calculadora-botones{
+    margin-left: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.btn{
+    background-color: rgb(36, 36, 131);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    margin: 0.4rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    user-select: none;
+}
+.btn-c{
+    background: #503FB0;
+    color: #fff;
+}
+.btn-num{
+    background: #84EDA3;
+}
+.btn-accion{
+    background-color: #F5D545;
+    color: #BF6874;
+}
+.btn-igual{
+    background-color: #E84300;
+    color: white;
+    grid-column: 4;
+    grid-row: 4/6;
+    height: 7.5rem;
+    border-radius: 2rem;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
